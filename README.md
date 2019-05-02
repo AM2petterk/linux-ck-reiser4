@@ -6,12 +6,12 @@ PLEASE take a CLOSE look at the PKGBUILD before compiling and/or running the ker
 
 ## Features:
 
-* Optional Reiser4 filesystem support (Thanks to @edward6 - Edward Shishkin)
-* Optional support for Con Kolivas -ck1 patchset (Thanks to Con Kolivas)
-* Optional support for disabling the MuQSS scheduler provided by the -ck1 patchset
-* LZ4 compression by default
-* Optional Intel-only CPU support
-* Optional support for AMD CPUs
+* Optional Reiser4 filesystem support (Thanks to @edward6 - Edward Shishkin, enabled by default)
+* Optional support for Con Kolivas -ck1 patchset (Thanks to Con Kolivas, enabled by default)
+* Optional support for disabling the MuQSS scheduler provided by the -ck1 patchset (enabled by default)
+* LZ4 compression (enabled by default)
+* Optional Intel-only CPU support (enabled by default)
+* Optional support for AMD CPUs (disabled by default)
 * Optional support for NUMA (disabled by default, inspired by @sudokamikaze)
 * Additional CPU optimizations (Thanks to @graysky, default=native)
 * Optional support for disabling/enabling Nouveau support
