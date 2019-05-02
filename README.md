@@ -77,3 +77,8 @@ For most people, the default should suffice and to build the kernel and the kern
 
 `` sudo pacman -U linux-ck-reiser4-5.0.10-1.pkg.tar.xz linux-ck-reiser4-headers-5.0.10-1.pkg.tar.xz ``
 
+Or to download and install from the AUR:
+
+``yaourt -S linux-ck-reiser4``
+
+(using yaourt in this example)
