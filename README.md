@@ -67,3 +67,11 @@ Enable a custom, lightweight and already optimized kernel configuration for user
 
 This is not recommended unless you have this exact laptop. In either case, enabling _makenconfig=y is highly recommended to enable the drivers that have been disabled (like touchscreen support, btrfs support, Qualcom/Atheros Wifi etc).
 
+For most people, the default should suffice and to build the kernel and the kernel modules:
+
+`` 
+git clone https://github.com/petter3k/linux-ck-reiser4.git 
+cd linux-ck-reiser4
+makepkg -c
+sudo pacman -U linux-ck-reiser4-5.0.10-1.pkg.tar.xz linux-ck-reiser4-headers-5.0.10-1.pkg.tar.xz
+``
