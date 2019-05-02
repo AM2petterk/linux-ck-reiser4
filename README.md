@@ -14,10 +14,10 @@ PLEASE take a CLOSE look at the PKGBUILD before compiling and/or running the ker
 * Optional support for AMD CPUs (disabled by default)
 * Optional support for NUMA (disabled by default, inspired by @sudokamikaze)
 * Additional CPU optimizations (Thanks to @graysky, default=native)
-* Optional support for disabling/enabling Nouveau support
-* Optional support for disabling/enabling watchdog timers support
-* Optional support for kernel configuration through 'nconfig'
-* Optional support for an already configured kernel configuration for Dell Precision/Dell XPS 15 laptops
+* Optional support for disabling/enabling Nouveau support (disabled by default)
+* Optional support for disabling/enabling watchdog timers support (disabled by default)
+* Optional support for kernel configuration through 'nconfig' (disabled by default)
+* Optional support for an already configured kernel for Dell Precision/Dell XPS 15 laptops (disabled by default)
 
 
 # HOWTO
