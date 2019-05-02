@@ -4,14 +4,20 @@ The kernel also has options for a already optimized kernel configuration for use
 
 PLEASE take a CLOSE look at the PKGBUILD before compiling and/or running the kernel.
 
-## Reiser4 patches provided by @edward6 (Edward Shishkin):
-https://github.com/edward6/reiser4
+## Features:
 
-## Linux-CK PKGBUILDs used as initial foundation: 
-https://aur.archlinux.org/packages/linux-ck/
-
-## Some options and inspiration taken from Linux-SK by @Sudokamikaze:
-https://github.com/Sudokamikaze/linux-sk
+* Optional Reiser4 filesystem support (Thanks to @edward6 - Edward Shishkin)
+* Optional support for Con Kolivas -ck1 patchset (Thanks to Con Kolivas)
+* Optional support for disabling the MuQSS scheduler provided by the -ck1 patchset
+* LZ4 compression by default
+* Optional Intel-only CPU support
+* Optional support for AMD CPUs
+* Optional support for NUMA (disabled by default, inspired by @sudokamikaze)
+* Additional CPU optimizations (Thanks to @graysky, default=native)
+* Optional support for disabling/enabling Nouveau support
+* Optional support for disabling/enabling watchdog timers support
+* Optional support for kernel configuration through 'nconfig'
+* Optional support for an already configured kernel configuration for Dell Precision/Dell XPS 15 laptops
 
 
 # HOWTO
