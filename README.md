@@ -17,7 +17,7 @@ PLEASE take a CLOSE look at the PKGBUILD before compiling and/or running the ker
 * Optional support for disabling/enabling Nouveau support (disabled by default)
 * Optional support for disabling/enabling watchdog timers support (disabled by default)
 * Optional support for kernel configuration through 'nconfig' (disabled by default)
-* Optional support for an already configured kernel for Dell Precision/Dell XPS 15 laptops (disabled by default)
+* Optional support for a very lightweight kernel config for Dell Precision >=5520/Dell XPS 15 >=9560 laptops (disabled by default)
 
 
 # HOWTO
@@ -63,11 +63,12 @@ To provide a little bit of flexibility, I added the option to allow for disablin
 
 _dellconfig=
 
-Enable a custom, lightweight and already optimized kernel configuration for users of Dell Precision 5520 or Dell XPS 9560 laptops (with Intel WiFi). 
+Enable a custom, very lightweight and already optimized kernel configuration for users of Dell Precision 5520 or Dell XPS 9560 laptops (with Intel WiFi). 
 
-This is not recommended unless you have this exact laptop. In either case, enabling _makenconfig=y is highly recommended to enable the drivers that have been disabled (like touchscreen support, btrfs support, Qualcom/Atheros Wifi etc).
+This is not recommended without configuring it manually and using it as a template. 
+In either case, enabling _makenconfig=y is highly recommended to enable the drivers that have been disabled (like touchscreen support, btrfs/xfs/jfs/f2fs support, Intel only wifi through PCIe).
 
-For most people, the default should suffice and to build the kernel and the kernel modules:
+For most people, the default options should suffice and to build the kernel and the kernel modules:
 
 `` git clone https://github.com/petter3k/linux-ck-reiser4.git ``
 
@@ -81,4 +82,4 @@ Or to download and install from the [AUR](https://aur.archlinux.org/packages/lin
 
 ``yaourt -S linux-ck-reiser4``
 
-(using yaourt in this example)
+(using yaourt in this example - any AUR helper will do)
