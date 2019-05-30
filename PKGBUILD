@@ -100,8 +100,7 @@ prepare() {
   if [ -n "$_enable_ck" ]; then
     sed -i -re "s/^(.EXTRAVERSION).*$/\1 = /" "../${_ckpatch}"
     msg2 "Patching the kernel with the ck1 patchset..."
-    sed -i '/-CFLAGS/ s/$/ \$(LIBELF_FLAGS)/' "$srcdir/patch-5.1-ck1"
-    patch -F 3 -Np1 -i "$srcdir/${_ckpatch}"
+    patch -Np1 -i "$srcdir/${_ckpatch}"
   else
     msg2 "Skipping the -ck1 patchset..."
   fi
