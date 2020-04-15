@@ -1,6 +1,7 @@
 # linux-ck-reiser4 (current kernel base = 5.1.5)
-Arch Linux custom kernel with Reiser4 filesystem patches, -ck1 patchset featuring MuQSS v.0190, Graysky's GCC patch for additional CPU optimizations and other options in the PKGBUILD.
-The kernel also has options for a already optimized kernel configuration for users of the Dell Precision >=5520/Dell XPS 15 >=9560 laptops.
+Arch Linux custom kernel with our upstream Reiser4 filesystem patches, Con Kolivas' -ck1 patchset featuring MuQSS v.0190 scheduler for lower latency at interactivity as a replacement for CFQ (Completely Fair Scheduler), a GCC patch for additional CPU optimizations (such as compile flag -march=native) and other options in the PKGBUILD.
+
+The kernel also has options for a already optimized kernel configuration for users of the Dell Precision >=5520 laptops.
 
 PLEASE take a CLOSE look at the PKGBUILD before compiling and/or running the kernel.
 
